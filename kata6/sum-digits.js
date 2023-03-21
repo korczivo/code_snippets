@@ -3,7 +3,7 @@ function digitalRoot(n) {
     return arr.reduce((acc, curr) => {
         const sum = acc + curr;
         if (sum >= 10) {
-            return digitalRoot(sum)
+            return digitalRoot(sum);
         }
         return sum;
     }, 0)
